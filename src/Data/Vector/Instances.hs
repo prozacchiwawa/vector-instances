@@ -116,21 +116,21 @@ instance Extend Vector where
   {-# INLINE extended #-}
 
 #if !(MIN_VERSION_vector(0,12,0))
-instance Semigroup (Vector a) where
-  (<>) = (++)
-  {-# INLINE (<>) #-}
+-- instance Semigroup (Vector a) where
+--   (<>) = (++)
+--   {-# INLINE (<>) #-}
 
-instance Unboxed.Unbox a => Semigroup (Unboxed.Vector a) where
-  (<>) = (Unboxed.++)
-  {-# INLINE (<>) #-}
+-- instance Unboxed.Unbox a => Semigroup (Unboxed.Vector a) where
+--   (<>) = (Unboxed.++)
+--   {-# INLINE (<>) #-}
 
-instance Storable.Storable a => Semigroup (Storable.Vector a) where
-  (<>) = (Storable.++)
-  {-# INLINE (<>) #-}
+-- instance Storable.Storable a => Semigroup (Storable.Vector a) where
+--   (<>) = (Storable.++)
+--   {-# INLINE (<>) #-}
 
-instance Primitive.Prim a => Semigroup (Primitive.Vector a) where
-  (<>) = (Primitive.++)
-  {-# INLINE (<>) #-}
+-- instance Primitive.Prim a => Semigroup (Primitive.Vector a) where
+--   (<>) = (Primitive.++)
+--   {-# INLINE (<>) #-}
 #endif
 
 #ifdef MIN_VERSION_hashable

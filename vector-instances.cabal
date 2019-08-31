@@ -44,7 +44,7 @@ flag hashable
 library
   other-extensions: TypeFamilies
   exposed-modules: Data.Vector.Instances
-  hs-source-dirs: eta
+  hs-source-dirs: src
   build-depends:
     base          >= 4       && < 5,
     vector        >= 0.9     && < 0.13,
